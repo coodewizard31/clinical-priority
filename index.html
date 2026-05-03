@@ -16,6 +16,18 @@
           <li><a href="services.html">All Services</a></li>
           <li><a href="about.html">About us</a></li>
         </ul>
+        <!-- a shortcut to patients with the services they need its like a quich join -->
+        <form class="nav-queue-form" action="services.html" method="GET">
+                <select name="department" id="dept-select" required>
+                    <option value="" disabled selected>Quick Join...</option>
+                    <option value="x-ray">X-Ray</option>
+                    <option value="consultation">Consultation Ward</option>
+                    <option value="dentist">Dentist</option>
+                    <option value="mri">MRI</option>
+                    <option value="emergency">Emergency Unit</option>
+                </select>
+                <button type="submit">Join</button>
+            </form>
       </nav>
     </header>
   </body>
