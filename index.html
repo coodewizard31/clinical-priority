@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Clinical Priority</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <header>
-        <h2>Medi Queue</h2>
-        <p>Ensuring efficient medical services straight from hospital entries</p>
+      <h2>Medi Queue</h2>
+      <p>Ensuring efficient medical services straight from hospital entries</p>
       <!-- created a navigation on my header -->
-      <nav>
+      <nav class="navbar">
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="services.html">All Services</a></li>
@@ -19,55 +19,66 @@
         </ul>
         <!-- a shortcut to patients with the services they need its like a quich join -->
         <form class="nav-queue-form" action="services.html" method="GET">
-                <select name="department" id="dept-select" required>
-                    <option value="" disabled selected>Quick Join...</option>
-                    <option value="x-ray">X-Ray</option>
-                    <option value="consultation">Consultation Ward</option>
-                    <option value="dentist">Dentist</option>
-                    <option value="mri">MRI</option>
-                    <option value="emergency">Emergency Unit</option>
-                </select>
-                <button type="submit">Join</button>
-            </form>
+          <select name="department" id="dept-select" required>
+            <option value="" disabled selected>Quick Join...</option>
+            <option value="x-ray">X-Ray</option>
+            <option value="consultation">Consultation Ward</option>
+            <option value="dentist">Dentist</option>
+            <option value="mri">MRI</option>
+            <option value="emergency">Emergency Unit</option>
+          </select>
+          <button type="submit">Join</button>
+        </form>
       </nav>
     </header>
     <main>
-        <section class="hero">
-            <!-- container for hero contents -->
-             <div class="hero-content">
-                <h2>Get well <br>Without unecessary waiting</h2>
-                <p>MediQueue synchronizes patient flow in real-time. Join a queue from your phone and arrive just in time for your appointment.</p>
-                <div class="hero-btns">
-                    <a href="#how-it-works" class="btn-primary">How it Works</a>
-                    <a href="services.html" class="btn-secondary">View All Depts</a>
-                </div>
-             </div>
+      <section class="hero">
+        <!-- container for hero contents -->
+        <div class="hero-content">
+          <h2>Get well <br />Without unecessary waiting</h2>
+          <p>
+            MediQueue synchronizes patient flow in real-time. Join a queue from
+            your phone and arrive just in time for your appointment.
+          </p>
+          <div class="hero-btns">
+            <a href="#how-it-works" class="btn-primary">How it Works</a>
+            <a href="services.html" class="btn-secondary">View All Depts</a>
+          </div>
+        </div>
+      </section>
+      <!-- section steps to follow to use the platfom -->
+      <section id="how-it-works" class="info-grid">
+        <h2>3 Simple Steps to Your Appointment</h2>
+        <div class="steps-container">
+          <article class="step-card">
+            <h3>1. Select Service</h3>
+            <p>
+              Use the <strong>Quick Join</strong> menu above or browse our
+              services to find the right department.
+            </p>
+          </article>
 
-        </section>
-        <!-- section steps to follow to use the platfom -->
-        <section id="how-it-works" class="info-grid">
-            <h2>3 Simple Steps to Your Appointment</h2>
-            <div class="steps-container">
-                <article class="step-card">
-                    <h3>1. Select Service</h3>
-                    <p>Use the <strong>Quick Join</strong> menu above or browse our services to find the right department.</p>
-                </article>
+          <article class="step-card">
+            <h3>2. Get Ticket</h3>
+            <p>
+              Fill in your basic details to generate your unique
+              <strong>Queue ID</strong> and digital ticket.
+            </p>
+          </article>
 
-                <article class="step-card">
-                    <h3>2. Get Ticket</h3>
-                    <p>Fill in your basic details to generate your unique <strong>Queue ID</strong> and digital ticket.</p>
-                </article>
-
-                <article class="step-card">
-                    <h3>3. Live Tracking</h3>
-                    <p>Monitor your position in the queue in real-time from any device while you wait comfortably.</p>
-                </article>
-            </div>
-        </section>
+          <article class="step-card">
+            <h3>3. Live Tracking</h3>
+            <p>
+              Monitor your position in the queue in real-time from any device
+              while you wait comfortably.
+            </p>
+          </article>
+        </div>
+      </section>
     </main>
     <!-- footer  -->
     <footer>
-        <p> 2026 MediQueue Hospital Systems | Efficiency in Healthcare</p>
+      <p>2026 MediQueue Hospital Systems | Efficiency in Healthcare</p>
     </footer>
   </body>
 </html>
