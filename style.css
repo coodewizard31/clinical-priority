@@ -3,3 +3,10 @@ body {
     background-color: #d7f5eb; /* Light grey/white for a sterile feel */
     color: #333333; /* Dark grey for easy reading */
 }
+/* flex things on my header section */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
