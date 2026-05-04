@@ -37,3 +37,7 @@ header:hover {
     /* Slight brightness boost */
     background-color: #fafafa; 
 }
+/* Adjusting Nav Links to react when the Header is hovered */
+header:hover .nav-links a {
+    color: #0056b3;
+}
