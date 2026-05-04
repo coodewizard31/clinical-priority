@@ -49,6 +49,44 @@ header:hover .nav-links a {
     align-items: center;
 }
 
+
+.logo {
+    font-size: 30px;         /* 3 x 10 */
+    font-weight: 900;       /* Universal 9 (Strongest) */
+    cursor: pointer;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+    display: inline-block;
+}
+
+/* Base Colors */
+.logo .medi {
+    color: #0056b3; /* Your Hospital Blue */
+    transition: color 0.3s ease;
+}
+
+.logo .queue {
+    color: #00a8cc; /* Your Teal */
+    transition: color 0.3s ease;
+}
+
+/* THE HOVER TRIGGER
+   Explanation: When the mouse enters the .logo area:
+   1. The whole thing scales up (Pops).
+   2. Medi turns Black.
+   3. Queue turns Red (Emergency Red). */
+
+.logo:hover {
+    transform: scale(1.09); /* The Universal 9 Pop */
+}
+
+.logo:hover .medi {
+    color: #000000; /* Black */
+}
+
+.logo:hover .queue {
+    color: #d9534f; /* Emergency Red (#d9534f is a classic medical red) */
+}
+
 /* 2. THE MENU ITEMS (The "Buttons")
    Instead of just text, we give the links padding and a background 
    so they look like clickable menu blocks. */
