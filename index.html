@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Clinical Priority</title>
+    <title>MediQueue| Home</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -16,20 +16,18 @@
       <nav class="navbar">
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">All Services</a></li>
-          <li><a href="about.html">About us</a></li>
+          <li><a href="booking.html">Queue</a></li>
+          <li><a href="about.html">About</a></li>
         </ul>
         <!-- a shortcut to patients with the services they need its like a quick join -->
-        <form class="nav-queue-form" action="services.html" method="GET">
-          <select name="department" id="dept-select" required>
+        <form class="nav-queue-form" action="booking.html" method="GET">
+          <select name="dept" id="dept-select" required>
             <option value="" disabled selected>Quick Join...</option>
             <option value="x-ray">X-Ray</option>
-            <option value="consultation">Consultation Ward</option>
             <option value="dentist">Dentist</option>
             <option value="mri">MRI</option>
-            <option value="emergency">Emergency Unit</option>
           </select>
-          <button type="submit">Join</button>
+          <button type="submit">Join Queue</button>
         </form>
       </nav>
     </header>
