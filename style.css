@@ -150,3 +150,17 @@ header:hover .nav-links a {
     font-weight: 900;
     cursor: pointer;
 }
+/* heros section */
+/* heros cotainer beautification */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh; 
+    padding: 90px 9%; 
+    background: linear-gradient(135deg, #0056b3 0%, #00a8cc 100%);
+    color: #ffffff;
+    text-align: center;
+    /* Subtle texture using the #f3f3f3 body color logic at low opacity */
+    border-bottom: 9px solid rgba(243, 243, 243, 0.3); 
+}
