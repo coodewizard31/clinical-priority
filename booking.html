@@ -34,22 +34,32 @@
     </main>
 <!-- internal javascript -->
  creating a landing page
-    <script>
-        const params = new URLSearchParams(window.location.search);
-        const dept = params.get('dept');
-        const landing = document.getElementById('image-landing');
-        const title = document.getElementById('dept-title');
+   <script>
+    // 1. Get the department from the URL (the ?dept= part)
+    const params = new URLSearchParams(window.location.search);
+    const department = params.get('dept');
 
-        if (dept === 'xray') {
-            title.innerText = "Radiology & X-Ray Unit";
-            landing.innerHTML = '<img src="xray.jpg" class="dept-img" alt="X-Ray">';
-        } else if (dept === 'dental') {
-            title.innerText = "Dental Care Wing";
-            landing.innerHTML = '<img src="dental.jpg" class="dept-img" alt="Dental">';
-        } else if (dept === 'mri') {
-            title.innerText = "MRI Scanning Suite";
-            landing.innerHTML = '<img src="mri.jpg" class="dept-img" alt="MRI">';
-        }
-    </script>
+    // 2. Identify the "Target" elements on the page
+    const titleArea = document.getElementById('dept-title');
+    const imageArea = document.getElementById('image-landing');
+
+    // 3. The Logic: If the URL says 'xray', change the title and image
+    if (department === 'xray') {
+        titleArea.innerText = "Radiology & X-Ray Unit";
+        imageArea.innerHTML = '<img src="xray.jpg" class="dept-img">';
+    } 
+    else if (department === 'dental') {
+        titleArea.innerText = "Dental Care Wing";
+        imageArea.innerHTML = '<img src="dental.jpg" class="dept-img">';
+    } 
+    else if (department === 'mri') {
+        titleArea.innerText = "MRI Scanning Suite";
+        imageArea.innerHTML = '<img src="mri.jpg" class="dept-img">';
+    }
+    else {
+        // If someone goes to booking.html without picking a department
+        titleArea.innerText = "Please Select a Department";
+    }
+</script>
 </body>
 </html>
