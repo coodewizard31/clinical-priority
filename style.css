@@ -11,6 +11,29 @@ header {
     height: 90px;
     padding: 0 9%;
     background-color: #ffff;
+    box-shadow: 0px 3px 9px rgba(0, 0, 0,0.09);
+    margin: 0px;
+    border-radius: 9px;
+    /* header pop up effect */
+    border-bottom: 3px solid #e3e3e3; 
+    /* transition to the header & cursor */
+    box-shadow: 0 3px 6px rgba(0,0,0,0.03);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    cursor: pointer;
     
 
+}
+/* the hover effect whe around the header section */
+header:hover {
+    /* Lift the header slightly (Universal 3) */
+    transform: translateY(-3px); 
+    
+    /* Intensify the shadow (Universal 9) to create depth */
+    box-shadow: 0 9px 18px rgba(0,0,0,0.09);
+    
+    /* Change border to your Hospital Blue (3px) */
+    border-bottom: 3px solid #0056b3;
+    
+    /* Slight brightness boost */
+    background-color: #fafafa; 
 }
