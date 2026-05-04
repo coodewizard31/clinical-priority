@@ -163,6 +163,7 @@ header:hover .nav-links a {
     text-align: center;
     /* Subtle texture using the #f3f3f3 body color logic at low opacity */
     border-bottom: 9px solid rgba(243, 243, 243, 0.3); 
+    border-radius: 9px;
 }
 /* heros content */
 .hero-content {
@@ -239,6 +240,7 @@ header:hover .nav-links a {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
     gap: 36px; /* 9 x 4 | Spacious and organized */
+    border-radius: 9px;
 }
 
 /* 3. THE STEP CARDS
