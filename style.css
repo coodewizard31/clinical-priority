@@ -281,3 +281,14 @@ header:hover .nav-links a {
         padding: 0 3%;
     }
 }
+/* images injected in the service page by the inscript javascript */
+.dept-img {
+    width: 100%;           /* Fills the width of the card */
+    max-width: 600px;      /* Prevents it from getting TOO huge on big screens */
+    height: 400px;         /* Increased from 250px to make it "big a little more" */
+    object-fit: cover;     /* Keeps the photo from stretching/looking weird */
+    border-radius: 12px;   /* Softens the corners */
+    display: block;        /* Centers it better */
+    margin: 0 auto 20px;   /* Centers the image and adds space below it */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Optional: adds a nice lift */
+}
