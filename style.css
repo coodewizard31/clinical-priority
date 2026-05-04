@@ -164,3 +164,45 @@ header:hover .nav-links a {
     /* Subtle texture using the #f3f3f3 body color logic at low opacity */
     border-bottom: 9px solid rgba(243, 243, 243, 0.3); 
 }
+/* heros content */
+.hero-content {
+    max-width: 900px; /* Universal 9 - Focus width */
+}
+.hero h1 {
+    font-size: 63px; /* 6+3 = 9 | Multiples of 9 */
+    font-weight: 900;
+    margin-bottom: 27px; /* 9 x 3 */
+    line-height: 0.9;
+    letter-spacing: -1px;
+}
+.hero p {
+    font-size: 18px; /* 1+8 = 9 | 3 x 6 */
+    font-weight: 300; /* Light foundation */
+    margin-bottom: 36px; /* 6 x 6 */
+    opacity: 0.9; /* Universal 9 opacity */
+}
+/* hero btns */
+.hero-btns {
+    display: flex;
+    gap: 18px; /* 9 x 2 */
+    justify-content: center;
+}
+
+.btn-primary, .btn-secondary {
+    padding: 15px 30px; /* 1+5=6 and 3+0=3 */
+    border-radius: 9px;  /* Universal 9 curve */
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 3px solid transparent;
+}
+.btn-primary {
+    background-color: #ffffff;
+    color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #ffffff;
+    border: 3px solid #ffffff;
+}
