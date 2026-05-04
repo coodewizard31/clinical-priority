@@ -41,3 +41,49 @@ header:hover {
 header:hover .nav-links a {
     color: #0056b3;
 }
+/* nav links modification */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 9px; /* Universal 3x3 gap */
+    align-items: center;
+}
+
+/* 2. THE MENU ITEMS (The "Buttons")
+   Instead of just text, we give the links padding and a background 
+   so they look like clickable menu blocks. */
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 18px; /* 1+8 = 9 */
+    
+    /* UNIVERSAL SPACING: 9px top/bottom, 18px left/right */
+    padding: 9px 18px; 
+    
+    /* THE MENU LOOK: Rounded corners and a border */
+    border-radius: 6px; /* Universal 3x2 */
+    border: 3px solid transparent; 
+    
+    transition: all 0.3s ease;
+}
+
+/* 3. THE MENU HOVER EFFECT
+   When the user hovers, the link fills with your #f3f3f3 
+   background to look like a pressed button. */
+.nav-links li a:hover {
+    background-color: #f3f3f3; /* Matches your body color */
+    color: #0056b3; /* Hospital Blue text */
+    border: 3px solid #0056b3; /* Highlights the menu boundary */
+    
+    /* 3px lift to show it's active */
+    transform: translateY(-3px);
+}
+
+/* 4. THE ACTIVE STATE
+   Use this for the page the user is currently on. */
+.nav-links li a.active {
+    background-color: #0056b3;
+    color: #ffffff;
+    border: 3px solid #0056b3;
+}
