@@ -1,8 +1,11 @@
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
-    background-color:#f3f3f3; /* Light grey/white for a sterile feel */
-    color: #333333; /* Dark grey for easy reading */
+    background-color: #f3f3f3;
+    /* Light grey/white for a sterile feel */
+    color: #333333;
+    /* Dark grey for easy reading */
 }
+
 /* flex things on my header section */
 header {
     display: flex;
@@ -11,61 +14,69 @@ header {
     height: 90px;
     padding: 0 9%;
     background-color: #ffff;
-    box-shadow: 0px 3px 9px rgba(0, 0, 0,0.09);
+    box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.09);
     margin: 0px;
     border-radius: 9px;
     /* header pop up effect */
-    border-bottom: 3px solid #e3e3e3; 
+    border-bottom: 3px solid #e3e3e3;
     /* transition to the header & cursor */
-    box-shadow: 0 3px 6px rgba(0,0,0,0.03);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.03);
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     cursor: pointer;
-    
+
 
 }
+
 /* the hover effect whe around the header section */
 header:hover {
     /* Lift the header slightly (Universal 3) */
-    transform: translateY(-3px); 
-    
+    transform: translateY(-3px);
+
     /* Intensify the shadow (Universal 9) to create depth */
-    box-shadow: 0 9px 18px rgba(0,0,0,0.09);
-    
+    box-shadow: 0 9px 18px rgba(0, 0, 0, 0.09);
+
     /* Change border to your Hospital Blue (3px) */
     border-bottom: 3px solid #0056b3;
-    
+
     /* Slight brightness boost */
-    background-color: #fafafa; 
+    background-color: #fafafa;
 }
+
 /* Adjusting Nav Links to react when the Header is hovered */
 header:hover .nav-links a {
     color: #0056b3;
 }
+
 /* nav links modification */
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 9px; /* Universal 3x3 gap */
+    gap: 9px;
+    /* Universal 3x3 gap */
     align-items: center;
 }
 
 
 .logo {
-    font-size: 30px;         /* 3 x 10 */
-    font-weight: 900;       /* Universal 9 (Strongest) */
+    font-size: 30px;
+    /* 3 x 10 */
+    font-weight: 900;
+    /* Universal 9 (Strongest) */
     cursor: pointer;
-    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     display: inline-block;
 }
 
 /* Base Colors */
 .logo .medi {
-    color: #0056b3; /* Your Hospital Blue */
+    color: #0056b3;
+    /* Your Hospital Blue */
     transition: color 0.3s ease;
 }
 
 .logo .queue {
-    color: #00a8cc; /* Your Teal */
+    color: #00a8cc;
+    /* Your Teal */
     transition: color 0.3s ease;
 }
 
@@ -76,15 +87,18 @@ header:hover .nav-links a {
    3. Queue turns Red (Emergency Red). */
 
 .logo:hover {
-    transform: scale(1.09); /* The Universal 9 Pop */
+    transform: scale(1.09);
+    /* The Universal 9 Pop */
 }
 
 .logo:hover .medi {
-    color: #000000; /* Black */
+    color: #000000;
+    /* Black */
 }
 
 .logo:hover .queue {
-    color: #d9534f; /* Emergency Red (#d9534f is a classic medical red) */
+    color: #d9534f;
+    /* Emergency Red (#d9534f is a classic medical red) */
 }
 
 /* 2. THE MENU ITEMS (The "Buttons")
@@ -94,15 +108,17 @@ header:hover .nav-links a {
     text-decoration: none;
     color: #333;
     font-weight: 600;
-    font-size: 18px; /* 1+8 = 9 */
-    
+    font-size: 18px;
+    /* 1+8 = 9 */
+
     /* UNIVERSAL SPACING: 9px top/bottom, 18px left/right */
-    padding: 9px 18px; 
-    
+    padding: 9px 18px;
+
     /* THE MENU LOOK: Rounded corners and a border */
-    border-radius: 6px; /* Universal 3x2 */
-    border: 3px solid transparent; 
-    
+    border-radius: 6px;
+    /* Universal 3x2 */
+    border: 3px solid transparent;
+
     transition: all 0.3s ease;
 }
 
@@ -110,10 +126,13 @@ header:hover .nav-links a {
    When the user hovers, the link fills with your #f3f3f3 
    background to look like a pressed button. */
 .nav-links li a:hover {
-    background-color: #f3f3f3; /* Matches your body color */
-    color: #0056b3; /* Hospital Blue text */
-    border: 3px solid #0056b3; /* Highlights the menu boundary */
-    
+    background-color: #f3f3f3;
+    /* Matches your body color */
+    color: #0056b3;
+    /* Hospital Blue text */
+    border: 3px solid #0056b3;
+    /* Highlights the menu boundary */
+
     /* 3px lift to show it's active */
     transform: translateY(-3px);
 }
@@ -125,6 +144,7 @@ header:hover .nav-links a {
     color: #ffffff;
     border: 3px solid #0056b3;
 }
+
 /* nav form modifications */
 /* 4. THE NAV FORM - Quick Queue
     The inputs use 9px rounding and 36px height 
@@ -150,53 +170,70 @@ header:hover .nav-links a {
     font-weight: 900;
     cursor: pointer;
 }
+
 /* heros section */
 /* heros cotainer beautification */
 .hero {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 60vh; 
-    padding: 90px 9%; 
+    height: 60vh;
+    padding: 90px 9%;
     background: linear-gradient(135deg, #0056b3 0%, #00a8cc 100%);
     color: #ffffff;
     text-align: center;
     /* Subtle texture using the #f3f3f3 body color logic at low opacity */
-    border-bottom: 9px solid rgba(243, 243, 243, 0.3); 
+    border-bottom: 9px solid rgba(243, 243, 243, 0.3);
     border-radius: 9px;
 }
+
 /* heros content */
 .hero-content {
-    max-width: 900px; /* Universal 9 - Focus width */
+    max-width: 900px;
+    /* Universal 9 - Focus width */
 }
+
 .hero h1 {
-    font-size: 63px; /* 6+3 = 9 | Multiples of 9 */
+    font-size: 63px;
+    /* 6+3 = 9 | Multiples of 9 */
     font-weight: 900;
-    margin-bottom: 27px; /* 9 x 3 */
+    margin-bottom: 27px;
+    /* 9 x 3 */
     line-height: 0.9;
     letter-spacing: -1px;
 }
+
 .hero p {
-    font-size: 18px; /* 1+8 = 9 | 3 x 6 */
-    font-weight: 300; /* Light foundation */
-    margin-bottom: 36px; /* 6 x 6 */
-    opacity: 0.9; /* Universal 9 opacity */
+    font-size: 18px;
+    /* 1+8 = 9 | 3 x 6 */
+    font-weight: 300;
+    /* Light foundation */
+    margin-bottom: 36px;
+    /* 6 x 6 */
+    opacity: 0.9;
+    /* Universal 9 opacity */
 }
+
 /* hero btns */
 .hero-btns {
     display: flex;
-    gap: 18px; /* 9 x 2 */
+    gap: 18px;
+    /* 9 x 2 */
     justify-content: center;
 }
 
-.btn-primary, .btn-secondary {
-    padding: 15px 30px; /* 1+5=6 and 3+0=3 */
-    border-radius: 9px;  /* Universal 9 curve */
+.btn-primary,
+.btn-secondary {
+    padding: 15px 30px;
+    /* 1+5=6 and 3+0=3 */
+    border-radius: 9px;
+    /* Universal 9 curve */
     font-weight: 600;
     text-decoration: none;
     transition: all 0.3s ease;
     border: 3px solid transparent;
 }
+
 .btn-primary {
     background-color: #ffffff;
     color: #0056b3;
@@ -207,28 +244,35 @@ header:hover .nav-links a {
     color: #ffffff;
     border: 3px solid #ffffff;
 }
+
 /* button hover effects */
 .btn-primary:hover {
     transform: translateY(-3px) scale(1.03);
-    background-color: #f3f3f3; /* Matches your body color */
-    box-shadow: 0 9px 18px rgba(0,0,0,0.2);
+    background-color: #f3f3f3;
+    /* Matches your body color */
+    box-shadow: 0 9px 18px rgba(0, 0, 0, 0.2);
 }
 
 .btn-secondary:hover {
     background-color: rgba(255, 255, 255, 0.1);
     transform: translateY(-3px);
 }
+
 /* info grid */
 .info-grid {
     padding: 90px 9%;
     text-align: center;
-    background-color: #f3f3f3; /* Matching your universal body color */
+    background-color: #f3f3f3;
+    /* Matching your universal body color */
 }
 
 .info-grid h2 {
-    font-size: 36px; /* 3+6 = 9 | Universal 9 */
-    margin-bottom: 54px; /* 9 x 6 */
-    color: #000000; /* Matching your black logo hover state */
+    font-size: 36px;
+    /* 3+6 = 9 | Universal 9 */
+    margin-bottom: 54px;
+    /* 9 x 6 */
+    color: #000000;
+    /* Matching your black logo hover state */
     text-transform: uppercase;
     letter-spacing: 3px;
 }
@@ -238,8 +282,9 @@ header:hover .nav-links a {
    3 columns = 33.3% each, creating a perfect Universal 3 balance. */
 .steps-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 36px; /* 9 x 4 | Spacious and organized */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 36px;
+    /* 9 x 4 | Spacious and organized */
     border-radius: 9px;
 }
 
@@ -248,32 +293,43 @@ header:hover .nav-links a {
    3px top-border for that professional medical highlight. */
 .step-card {
     background-color: #ffffff;
-    padding: 45px 27px; /* 4+5=9 and 2+7=9 */
+    padding: 45px 27px;
+    /* 4+5=9 and 2+7=9 */
     border-radius: 9px;
-    box-shadow: 0 3px 9px rgba(0,0,0,0.06);
-    border-top: 6px solid #0056b3; /* The Balance (6) */
-    transition: all 0.6s ease; /* Universal 6 transition */
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.06);
+    border-top: 6px solid #0056b3;
+    /* The Balance (6) */
+    transition: all 0.6s ease;
+    /* Universal 6 transition */
 }
 
 .step-card h3 {
-    font-size: 24px; /* 2+4 = 6 */
-    margin-bottom: 18px; /* 9 x 2 */
+    font-size: 24px;
+    /* 2+4 = 6 */
+    margin-bottom: 18px;
+    /* 9 x 2 */
     color: #0056b3;
 }
 
 .step-card p {
-    font-size: 15px; /* 1+5 = 6 */
+    font-size: 15px;
+    /* 1+5 = 6 */
     color: #666;
-    line-height: 1.8; /* 3 x 0.6 */
+    line-height: 1.8;
+    /* 3 x 0.6 */
 }
+
 /* hover effects */
 /* Explanation: When a user hovers, the card "Pops" just like the logo.  */
-   /* We change the border to Red to show activity. */ 
+/* We change the border to Red to show activity. */
 .step-card:hover {
-    transform: translateY(-9px); /* The Universal 9 Lift */
-    box-shadow: 0 18px 36px rgba(0,0,0,0.12);
-    border-top: 6px solid #d9534f; /* Shifts to Emergency Red */
+    transform: translateY(-9px);
+    /* The Universal 9 Lift */
+    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.12);
+    border-top: 6px solid #d9534f;
+    /* Shifts to Emergency Red */
 }
+
 /* media queries to ensure right display on different devices like mobile phone ,desktop & tablet */
 @media (max-width: 768px) {
     .steps-container {
@@ -281,90 +337,137 @@ header:hover .nav-links a {
         padding: 0 3%;
     }
 }
+
 /* images injected in the service page by the inscript javascript */
 .dept-img {
-    width: 100%;           /* Fills the width of the card */
-    max-width: 600px;      /* Prevents it from getting TOO huge on big screens */
-    height: 400px;         /* Increased from 250px to make it "big a little more" */
-    object-fit: cover;     /* Keeps the photo from stretching/looking weird */
-    border-radius: 12px;   /* Softens the corners */
-    display: block;        /* Centers it better */
-    margin: 0 auto 20px;   /* Centers the image and adds space below it */
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Optional: adds a nice lift */
-}
-/* articles on the home page  */
-.center-wrapper {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
+    width: 100%;
+    /* Fills the width of the card */
+    max-width: 600px;
+    /* Prevents it from getting TOO huge on big screens */
+    height: 400px;
+    /* Increased from 250px to make it "big a little more" */
+    object-fit: cover;
+    /* Keeps the photo from stretching/looking weird */
+    border-radius: 12px;
+    /* Softens the corners */
+    display: block;
+    /* Centers it better */
+    margin: 0 auto 20px;
+    /* Centers the image and adds space below it */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    /* Optional: adds a nice lift */
 }
 
-.article-grid {
-    display: flex;
-    gap: 30px;
-    justify-content: center; /* Keeps cards centered if there are only a few */
-}
 
 /* 2. The "Pop" Entrance Animation */
 @keyframes popIn {
-    0% { transform: scale(0.5); opacity: 0; }
-    70% { transform: scale(1.1); } /* The "Bounce" or Zap */
-    100% { transform: scale(1); opacity: 1; }
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    70% {
+        transform: scale(1.1);
+    }
+
+    /* The "Bounce" or Zap */
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
-.article-card {
-    width: 320px;
-    background: #fff;
-    border-radius: 20px;
+.main-title {
+    text-align: center;
+    /* Centers the text inside the box */
+    margin: 40px auto;
+    /* Adds space top/bottom and centers the box itself */
+    width: 100%;
+    /* Ensures it has the full width to center within */
+    font-size: 2.5rem;
+    /* Makes it stand out as a main heading */
+    color: #333;
+    /* Dark professional color */
+    position: relative;
+    /* Useful if you want to add underlines later */
+}
+
+/* 1. THE BOX AROUND THE CARDS */
+.awareness-container {
+    width: 600px;
+    /* Sets a small, fixed width */
+    margin: 50px auto;
+    /* The 'auto' part forces it to the center of the page */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* Space between the two cards */
+}
+
+/* 2. THE TITLE */
+.main-title {
+    text-align: center;
+    /* Puts the text in the middle */
+    margin-bottom: 20px;
+}
+
+/* 3. THE CARD */
+.zap-card {
+    display: flex;
+    /* Image and Text sit side-by-side */
+    height: 180px;
+    /* Makes the card short and sleek */
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    
-    /* Apply the Pop */
-    animation: popIn 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
-    opacity: 0;
-    transition: all 0.3s ease;
+    transition: transform 0.3s;
+    /* The 'Zap' speed */
     cursor: pointer;
 }
 
-/* 3. The "Zap" Click/Hover Effect */
-.article-card:hover {
-    transform: translateY(-10px) scale(1.03); /* Pops up toward user */
-    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+/* 4. THE ZAP (Pop out when hovered) */
+.zap-card:hover {
+    transform: scale(1.05);
+    /* Card grows slightly */
 }
 
-.article-card:active {
-    transform: scale(0.95); /* Zaps down when clicked */
+/* 5. IMAGE SIDE (40% of the card) */
+.zap-image-box {
+    flex: 0 0 40%;
 }
 
-.img-zoom-container {
-    overflow: hidden;
-    height: 200px;
-}
-
-.article-img {
+.zap-image-box img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.5s ease;
+    /* Keeps the photo looking sharp */
 }
 
-.article-card:hover .article-img {
-    transform: scale(1.1); /* Image zooms in slightly while card pops up */
+/* 6. TEXT SIDE (60% of the card) */
+.zap-info {
+    flex: 1;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Centers text top-to-bottom */
 }
 
-/* 4. The Button Zap */
-.zap-btn {
-    background: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 50px;
-    font-weight: bold;
-    margin-top: 10px;
-    transition: 0.2s;
+.zap-info h3 {
+    margin: 0;
+    font-size: 1.1rem;
 }
 
-.zap-btn:hover {
-    background: #0056b3;
-    transform: scale(1.1);
+.zap-info p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 5px;
 }
+/* fix for mobile query */
+@media (max-width: 600px) {
+    .awareness-container {
+        width: 90%;
+        /* On small screens, don't stay 600px or you'll go off-edge */
+    }
+}   
