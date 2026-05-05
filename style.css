@@ -170,6 +170,20 @@ header:hover .nav-links a {
     font-weight: 900;
     cursor: pointer;
 }
+.exit-btn {
+    padding: 9px 18px;
+    border-radius: 9px;
+    background-color:#0056b3 ;
+    border: none;
+    font-weight: 900;
+    cursor: pointer;
+    font-style: none;
+
+}
+.exit-btn a{
+    text-decoration: none;
+    color: #ffff;
+}
 
 /* heros section */
 /* heros cotainer beautification */
