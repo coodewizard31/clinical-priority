@@ -178,6 +178,7 @@ header:hover .nav-links a {
     font-weight: 900;
     cursor: pointer;
     font-style: none;
+    margin-top: 40px;
 
 }
 .exit-btn a{
