@@ -470,4 +470,12 @@ header:hover .nav-links a {
         width: 90%;
         /* On small screens, don't stay 600px or you'll go off-edge */
     }
-}   
+}  
+.footer {
+    background-color: #0056b3;
+    color: white;           /* White Text */
+    text-align: center;     /* Centers Everything */
+    padding: 40px 20px;     /* Space inside */
+    margin-top: 50px;
+    border-radius: 9px;
+} 
