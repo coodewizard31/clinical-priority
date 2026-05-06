@@ -1,119 +1,129 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MediQueue| Home</title>
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <header>
-      <div class="logo">
-        <span class="medi">Medi</span><span class="queue">Queue</span>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MediQueue| Home</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <span class="medi">Medi</span><span class="queue">Queue</span>
+    </div>
+    <!-- created a navigation on my header -->
+    <p><strong>Efficient Medical Services</strong></p>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="booking.html">Queue</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <!-- a shortcut to patients with the services they need its like a quick join -->
+      <form class="nav-queue-form" action="booking.html" method="GET">
+        <select name="dept" id="dept-select" required>
+          <option value="" disabled selected>Quick Join...</option>
+          <option value="xray">X-Ray</option>
+          <option value="dental">Dentist</option>
+          <option value="mri">MRI</option>
+        </select>
+        <button type="submit">Join Queue</button>
+      </form>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <!-- container for hero contents -->
+      <div class="hero-content">
+        <h2>Get well <br />Without unecessary waiting</h2>
+        <p>
+          MediQueue synchronizes patient flow in real-time. Join a queue from
+          your phone and arrive just in time for your appointment.
+        </p>
+        <div class="hero-btns">
+          <a href="#how-it-works" class="btn-primary">How it Works</a>
+          <a href="booking.html" class="btn-secondary">View All Depts</a>
+        </div>
       </div>
-      <!-- created a navigation on my header -->
-      <p><strong>Efficient Medical Services</strong></p>
-      <nav class="navbar">
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="booking.html">Queue</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
-        <!-- a shortcut to patients with the services they need its like a quick join -->
-        <form class="nav-queue-form" action="booking.html" method="GET">
-          <select name="dept" id="dept-select" required>
-            <option value="" disabled selected>Quick Join...</option>
-            <option value="xray">X-Ray</option>
-            <option value="dental">Dentist</option>
-            <option value="mri">MRI</option>
-          </select>
-          <button type="submit">Join Queue</button>
-        </form>
-      </nav>
-    </header>
-    <main>
-      <section class="hero">
-        <!-- container for hero contents -->
-        <div class="hero-content">
-          <h2>Get well <br />Without unecessary waiting</h2>
+    </section>
+    <!-- some awareness readings -->
+    <section class="awareness-container">
+      <div class="ticket-display">
+        <span class="ticket-label">Current Ticket</span>
+        <div class="ticket-number">#042</div>
+        <p class="ticket-status">Please wait for your turn</p>
+      </div>
+      <h2 class="main-title">Health Essentials</h2>
+
+      <div class="zap-card">
+        <div class="zap-image-box">
+          <img src="diabetes.jpg" alt="Diabetes Awareness" />
+        </div>
+        <div class="zap-info">
+          <h3>Diabetes: Know the Signs</h3>
           <p>
-            MediQueue synchronizes patient flow in real-time. Join a queue from
-            your phone and arrive just in time for your appointment.
+            Diabetes occurs when your blood glucose is too high. Watch for
+            increased thirst, frequent urination, and unexplained fatigue.
+            Managing your diet and staying active are the first steps to
+            protection.
           </p>
-          <div class="hero-btns">
-            <a href="#how-it-works" class="btn-primary">How it Works</a>
-            <a href="booking.html" class="btn-secondary">View All Depts</a>
-          </div>
         </div>
-      </section>
-      <!-- some awareness readings -->
-      <section class="awareness-container">
-        <h2 class="main-title">Health Essentials</h2>
+      </div>
 
-        <div class="zap-card">
-          <div class="zap-image-box">
-            <img src="diabetes.jpg" alt="Diabetes Awareness" />
-          </div>
-          <div class="zap-info">
-            <h3>Diabetes: Know the Signs</h3>
-            <p>
-              Diabetes occurs when your blood glucose is too high. Watch for
-              increased thirst, frequent urination, and unexplained fatigue.
-              Managing your diet and staying active are the first steps to
-              protection.
-            </p>
-          </div>
+      <div class="zap-card">
+        <div class="zap-image-box">
+          <img src="smoking.jpg" alt="Dangers of Smoking" />
         </div>
-
-        <div class="zap-card">
-          <div class="zap-image-box">
-            <img src="smoking.jpg" alt="Dangers of Smoking" />
-          </div>
-          <div class="zap-info">
-            <h3>The Truth About Smoking</h3>
-            <p>
-              Smoking damages nearly every organ in the body. It’s not just
-              about lung cancer; it causes heart disease and strokes too.
-              Quitting for just 24 hours starts the process of repairing your
-              heart.
-            </p>
-          </div>
+        <div class="zap-info">
+          <h3>The Truth About Smoking</h3>
+          <p>
+            Smoking damages nearly every organ in the body. It’s not just
+            about lung cancer; it causes heart disease and strokes too.
+            Quitting for just 24 hours starts the process of repairing your
+            heart.
+          </p>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- section steps to follow to use the platfom -->
-      <section id="how-it-works" class="info-grid">
-        <h2>3 Simple Steps to Your Appointment</h2>
-        <div class="steps-container">
-          <article class="step-card">
-            <h3>1. Select Service</h3>
-            <p>
-              Use the <strong>Quick Join</strong> menu above or browse our
-              services to find the right department.
-            </p>
-          </article>
+    <!-- section steps to follow to use the platfom -->
+    <section id="how-it-works" class="info-grid">
+      <h2>3 Simple Steps to Your Appointment</h2>
+      <div class="steps-container">
+        <article class="step-card">
+          <h3>1. Select Service</h3>
+          <p>
+            Use the <strong>Quick Join</strong> menu above or browse our
+            services to find the right department.
+          </p>
+        </article>
 
-          <article class="step-card">
-            <h3>2. Get Ticket</h3>
-            <p>
-              Fill in your basic details to generate your unique
-              <strong>Queue ID</strong> and digital ticket.
-            </p>
-          </article>
+        <article class="step-card">
+          <h3>2. Get Ticket</h3>
+          <p>
+            Fill in your basic details to generate your unique
+            <strong>Queue ID</strong> and digital ticket.
+          </p>
+        </article>
 
-          <article class="step-card">
-            <h3>3. Live Tracking</h3>
-            <p>
-              Monitor your position in the queue in real-time from any device
-              while you wait comfortably.
-            </p>
-          </article>
-        </div>
-      </section>
-    </main>
-    <!-- footer  -->
-    <footer>
-      <p class="footer">2026 MediQueue Hospital Systems | Efficiency in Healthcare</p>
-    </footer>
-  </body>
+        <article class="step-card">
+          <h3>3. Live Tracking</h3>
+          <p>
+            Monitor your position in the queue in real-time from any device
+            while you wait comfortably.
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+  <!-- footer  -->
+  <footer>
+    <p class="footer">
+      2026 MediQueue Hospital Systems | Efficiency in Healthcare
+    </p>
+  </footer>
+</body>
+
 </html>
