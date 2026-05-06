@@ -43,7 +43,6 @@ create files into them
 Git profile:https://github.com/coodewizard31
 Email:frankwamuyu40@gmail.com
 Role:Junior dev
-## live site
 ## Copyright & License
 MIT License
 Copyright (c) 2026
