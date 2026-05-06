@@ -43,12 +43,7 @@
     // 2. Identify the "Target" elements on the page
     const titleArea = document.getElementById('dept-title');
     const imageArea = document.getElementById('image-landing');
-    // targeting the div to show the real ticket no on time
-    const ticketMessage=document.querySelector('.number')
-    // 3. CALENDAR ARRAY (As requested)
-    const weekDays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
-    // 4. QUEUE COUNTER LOGIC (1 to 400)
-    let currentTicket = localStorage.getItem('globalQueue') || 0;
+   
 
     // 3. The Logic: If the URL says 'xray', change the title and image
     if (department === 'xray') {
