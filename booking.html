@@ -43,6 +43,8 @@
     // 2. Identify the "Target" elements on the page
     const titleArea = document.getElementById('dept-title');
     const imageArea = document.getElementById('image-landing');
+    // targeting the div to show the real ticket no on time
+    const ticketMessage=document.querySelector('.number')
 
     // 3. The Logic: If the URL says 'xray', change the title and image
     if (department === 'xray') {
