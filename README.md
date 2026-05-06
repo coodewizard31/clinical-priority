@@ -1,4 +1,5 @@
 # MediQueue
+## Description
 MediQueue was developed to address the chaos of high-traffic medical centers. By
 moving the physical queue into a digital environment, hospitals can reduce lobby
 density, minimize wait-time anxiety, and provide a safer, more organized experience
@@ -17,7 +18,7 @@ the script interprets the string and initiates a ticket increment logic: Ticket 
 
 ## Project setup instructions
 ### step 1
-clone the git repository
+clone repo:https://github.com/coodewizard31/clinical-priority
 ### step 2
 cd into the cloned dir
 
@@ -38,9 +39,10 @@ create files into them
 2.The Reality: If a user is bored and manually changes the URL to ?dept=theater, the header might show "Confirming Department..." or break the image display because there is no theater.jpg.
 3.There is currently no "Timeout" or "Auto-Clear" logic.If a patient joins the queue and then simply closes their browser and goes home without clicking "Cancel & Exit," their ticket number stays in the localStorage forever.
 
-## Author details
-Git profile:coodewizard31
-Email :frankwamuyu40@gmail.com
+## Author information
+Git profile:https://github.com/coodewizard31
+Email:frankwamuyu40@gmail.com
+Role:Junior dev
 ## live site
 ## Copyright & License
 MIT License
